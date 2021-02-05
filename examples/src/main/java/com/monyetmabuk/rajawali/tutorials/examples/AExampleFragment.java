@@ -12,6 +12,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.monyetmabuk.rajawali.tutorials.R;
 import com.monyetmabuk.rajawali.tutorials.views.GithubLogoView;
@@ -49,6 +50,7 @@ public abstract class AExampleFragment extends Fragment implements IDisplay, OnC
 		}
 
 		mExampleUrl = bundle.getString(BUNDLE_EXAMPLE_URL);
+
 		mExampleTitle = bundle.getString(BUNDLE_EXAMPLE_TITLE);
 	}
 

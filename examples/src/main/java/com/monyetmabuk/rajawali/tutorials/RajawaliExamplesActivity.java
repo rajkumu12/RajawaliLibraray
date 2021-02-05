@@ -12,6 +12,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -186,7 +187,7 @@ public class RajawaliExamplesActivity extends ActionBarActivity implements
 	/**
 	 * Launch a fragment selected from the drawer or at application start.
 	 * 
-	 * @param fragClass
+	 * @param
 	 */
 	private void launchFragment(Category category, ExampleItem exampleItem) {
 		final FragmentManager fragmentManager = getSupportFragmentManager();
@@ -207,6 +208,7 @@ public class RajawaliExamplesActivity extends ActionBarActivity implements
 				transaction.addToBackStack(null);
 			
 			transaction.replace(R.id.content_frame, fragment, FRAGMENT_TAG);
+			Log.d("kmfldjklfmdafjmlda",""+fragment);
 			transaction.commit();
 		} catch (Exception e) {
 			e.printStackTrace();
